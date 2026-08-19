@@ -12,7 +12,7 @@ import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
-    val TAG = "MainActivity"
+    private val tag = "MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,37 +29,37 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onStart() {
-        display("onStart function called.")
         super.onStart()
+        display("onStart function called.")
     }
 
     override fun onPause() {
-        display("onPause function called.")
         super.onPause()
+        display("onPause function called.")
     }
 
     override fun onResume() {
-        display("onResume function called.")
         super.onResume()
+        display("onResume function called.")
     }
 
     override fun onStop() {
-        display("onStop function called.")
         super.onStop()
+        display("onStop function called.")
     }
 
     override fun onRestart() {
-        display("onRestart function called.")
         super.onRestart()
+        display("onRestart function called.")
     }
 
     override fun onDestroy() {
-        display("onDestroy function called.")
         super.onDestroy()
+        display("onDestroy function called.")
     }
 
     fun display(msg: String) {
-        Log.i(TAG, msg)
+        Log.i(tag, msg)
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
         val rootView = findViewById<View>(R.id.main)
         if (rootView != null) {
