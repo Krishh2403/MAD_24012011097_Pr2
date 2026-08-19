@@ -2,8 +2,8 @@
 
 **Course:** 2CEIT5PE18 – Mobile Application Development
 **Name:** Dev Patel
-**Enrollment No:** 24012011080
-**Package:** `com.dev.a24012011080_mad_pr2`
+**Enrollment No:** 24012011097
+**Package:** `com.example.mad_24012011097_pr2`
 
 ---
 
