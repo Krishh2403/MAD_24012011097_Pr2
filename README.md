@@ -62,7 +62,7 @@ Display **"Hello World"** in a `TextView`, centered on the screen, with a **yell
 ## `MainActivity.kt`
 
 ```kotlin
-package com.dev.a24012011080_mad_pr2
+package com.example.mad_24012011097_pr2
 
 import android.os.Bundle
 import android.util.Log
@@ -76,7 +76,6 @@ import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
-    val TAG = "MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -94,36 +93,29 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         display("onStart function called.")
-        super.onStart()
     }
 
     override fun onPause() {
         display("onPause function called.")
-        super.onPause()
     }
 
     override fun onResume() {
-        display("onResume function called.")
         super.onResume()
     }
 
     override fun onStop() {
         display("onStop function called.")
-        super.onStop()
     }
 
     override fun onRestart() {
         display("onRestart function called.")
-        super.onRestart()
     }
 
     override fun onDestroy() {
-        display("onDestroy function called.")
         super.onDestroy()
     }
 
     fun display(msg: String) {
-        Log.i(TAG, msg)
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
         val rootView = findViewById<View>(R.id.main)
         if (rootView != null) {
@@ -164,6 +156,6 @@ class MainActivity : AppCompatActivity() {
 
 ---
 
-**Submitted by:** Dev Patel
-**Enrollment No:** 24012011080
+**Submitted by:** Krish Patel
+**Enrollment No:** 24012011097
 **Practical:** 02
